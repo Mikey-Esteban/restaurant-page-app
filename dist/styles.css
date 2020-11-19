@@ -7,8 +7,8 @@
 .tag {
    float: left;
    position: absolute;
-   left: 300px;
-   top: 700px;
+   left: 20%;
+   top: 30%;
    z-index: 1000;
    background-color: #92AD40;
    padding: 5px;

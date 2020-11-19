@@ -1,5 +1,6 @@
 const Hero = () => {
 
+  console.log('hero ran');
   const mainDiv = document.querySelector('#content');
 
   // Create hero section, hero body, container, h1 & h1
