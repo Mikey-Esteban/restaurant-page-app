@@ -5,9 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Veganic Corner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/mystyles.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script> -->
 </head>
 <body>
-  <div id="content"></div>
+  <div class="block ml-5 mt-2">
+    <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="content">
+
+    <!-- ///////////////// -->
+    <!-- //// HERO ////// -->
+    <!-- /////////////// -->
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Welcome to Veganic Corner
+          </h1>
+          <h2 class="subtitle">
+            come work, talk, commune.. but most importantly be hungry for delicious healthy eats.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ///////////////////////////////////// -->
+    <!-- //// RESTAURANT IMAGE SECTION ////// -->
+    <!-- /////////////////////////////////// -->
+    <div class="block image-container">    <!-- div to set float -->
+      <div class="tag">                    <!-- div to set float -->
+
+        <!-- Twitter Feed of comments -->
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">John Smith</p>
+                <p class="subtitle is-6">@johnsmith</p>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+              <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Restaurant Image -->
+      <figure class="image is-5by4">
+        <img src="assets/openseating.jpg">
+      </figure>
+    </div>
+  </div>
 
   <script src="main.js" charset="utf-8"></script>
 </body>
