@@ -3,8 +3,26 @@ const Menu = () => {
   const mainsNames = ['Vegan Bowtie Pesto', 'Not Your Moms Fried Chickn', 'Turky Burgers'];
   const dessertsNames = ['All Vegan Peanut Butter Cups', 'Fruit Donuts Galore', 'Vegan French Toast'];
 
+  const menuNames = [
+    ['Light Bites', appsNames],
+    ['Empty Stomach Quenchers', mainsNames],
+    ['Sweet Tooth Much?', dessertsNames]
+  ];
+
+  // Helper Function to create App, Main, Dessert labels
+  const createMenuLabels = () => {
+    for (let name of menuNames) {
+      const P = document.createElement('P');
+      P.classList.add('menu-label');
+      P.innerText = name[0];
+      const UL = document.createElement('UL');
+      UL.classList.add('menu-list');
+      createMenuLIs(UL, name[1]);
+      menuASIDE.append(P, UL);
+    }
+  }
+  // Helper Function to create each item of (App, Main, Dessert)
   const createMenuLIs = (UL, names) => {
-    console.log('create menu li func ran.');
     for (let item of names) {
       const LI = document.createElement('LI');
       const A = document.createElement('A');
@@ -13,7 +31,6 @@ const Menu = () => {
       UL.append(LI);
     }
   }
-
 
   const mainDIV = document.querySelector('#content');
 
@@ -28,32 +45,8 @@ const Menu = () => {
     // Create the Menu html
     const menuASIDE = document.createElement('ASIDE');
     menuASIDE.classList.add('menu');
-      // Create Menu Labels for Apps, Mains, Desserts
-      const appsP = document.createElement('P');
-      appsP.classList.add('menu-label');
-      appsP.innerText = 'Light Bites';
-      const appsUL = document.createElement('UL');
-      appsUL.classList.add('menu-list');
-      createMenuLIs(appsUL, appsNames);
+    createMenuLabels();
 
-
-      const mainsP = document.createElement('P');
-      mainsP.classList.add('menu-label');
-      mainsP.innerText = 'Empty Stomach Quenchers';
-      const mainsUL = document.createElement('UL');
-      mainsUL.classList.add('menu-list');
-      createMenuLIs(mainsUL, mainsNames);
-
-
-      const dessertsP = document.createElement('P');
-      dessertsP.classList.add('menu-label');
-      dessertsP.innerText = 'Sweet Tooth Much?';
-      const dessertsUL = document.createElement('UL');
-      dessertsUL.classList.add('menu-list');
-      createMenuLIs(dessertsUL, dessertsNames);
-
-
-    menuASIDE.append(appsP, appsUL, mainsP, mainsUL, dessertsP, dessertsUL);
   menuCOLUMN.append(menuASIDE);
 
     const imgFIGURE = document.createElement('FIGURE');
