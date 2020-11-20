@@ -5,17 +5,26 @@
 
 // Set your brand colors
 $purple: #8A4D76;
-$pink: #FA7C91;
+$green: #d4e09b;
+$pink: #f19c79;
+$purple: #363457;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$off-white: #f6f4d2;
+$soft-green: #cbdfbd;
+$red: #a44a3f;
+
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $brown;
+$grey-darker: $purple;
 $grey-light: $beige-light;
-$primary: $purple;
+$primary: $green;
 $link: $pink;
+$info: $off-white;
+$success: $soft-green;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 

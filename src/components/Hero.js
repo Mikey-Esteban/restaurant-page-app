@@ -11,7 +11,7 @@ const Hero = () => {
   const heroCONTAINER = document.createElement('DIV');
   heroCONTAINER.classList.add('container');
   const heroTITLE = document.createElement('H1');
-  heroTITLE.classList.add('title');
+  heroTITLE.classList.add('title', 'has-text-grey-darker');
   heroTITLE.innerText = 'Welcome to Veganic Corner';
   const heroSUBTITLE = document.createElement('H2');
   heroSUBTITLE.classList.add('subtitle');
