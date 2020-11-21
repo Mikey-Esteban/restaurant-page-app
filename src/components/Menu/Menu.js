@@ -1,4 +1,8 @@
+import Hero from '../Home/Hero'
+
 const Menu = () => {
+  Hero();
+
   const appsNames = ['Garden Medley Salad', 'Butternut Squash Soup', 'Dumplings'];
   const mainsNames = ['Vegan Bowtie Pesto', 'Not Your Moms Fried Chickn', 'Turky Burgers'];
   const dessertsNames = ['All Vegan Peanut Butter Cups', 'Fruit Donuts Galore', 'Vegan French Toast'];

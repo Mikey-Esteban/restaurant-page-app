@@ -1,15 +1,32 @@
 console.log('i ran');
-import Hero from './components/Home/Hero'
-import MainImage from './components/Home/MainImage'
+import Home from './components/Home/Home'
 import Menu from './components/Menu/Menu'
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Home Page
-  Hero();
-  MainImage();
+  // Home Page as default
+  Home();
 
-  // Menu Page
-  Menu();
+  // handleTabChange
+  const handleTabChange = (event) => {
+    const mainDIV = document.querySelector('#content');
+    mainDIV.innerHTML = '';
+
+    if (event.target.id == 'homeTab') {
+      Home();
+    }
+    else if (event.target.id == 'menuTab'){
+      Menu();
+    }
+  }
+
+  const homeTab = document.querySelector('#homeTab');
+  const menuTab = document.querySelector('#menuTab');
+  const contactTab = document.querySelector('#contactTab');
+
+  homeTab.addEventListener('click', handleTabChange);
+  menuTab.addEventListener('click', handleTabChange);
+  contactTab.addEventListener('click', handleTabChange);
+
 
 })
