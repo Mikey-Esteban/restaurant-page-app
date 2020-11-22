@@ -29,5 +29,4 @@ export const createInfo = (color, text) => {
 }
 
 
-
 export default { createColumns, createColumn, createFigure, createInfo }
