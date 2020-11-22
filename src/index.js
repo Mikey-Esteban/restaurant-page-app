@@ -1,6 +1,7 @@
 console.log('i ran');
 import Home from './components/Home/Home'
 import Menu from './components/Menu/Menu'
+import Contact from './components/Contact/Contact'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -17,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else if (event.target.id == 'menuTab'){
       Menu();
+    }
+    else if (event.target.id == 'contactTab') {
+      Contact();
     }
   }
 
