@@ -1,5 +1,4 @@
-const ChefBioData = () => {
-  const chefOne = {
+export const chefOne = {
     bio: `Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit`,
     figColClasses: ["column", "is-3", "is-offset-2", "level-left"],
     infoColClasses: ["column", "is-6", "level-right", "mr-6"],
@@ -8,7 +7,7 @@ const ChefBioData = () => {
     infoColor: 'is-success'
   }
 
-  const chefTwo = {
+export const chefTwo = {
     bio: `Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit`,
     figColClasses: ["column", "is-5", "level-right", "mr-6"],
     infoColClasses: ["column", "is-5", "is-offset-1", "level-left"],
@@ -18,8 +17,5 @@ const ChefBioData = () => {
     reverse: true
   }
 
-  return { chefOne, chefTwo }
-  
-}
 
-export default ChefBioData
+export default { chefOne, chefTwo }
