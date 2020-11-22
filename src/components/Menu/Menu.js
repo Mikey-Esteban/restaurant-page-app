@@ -1,7 +1,7 @@
-import Hero from '../Home/Hero'
+import MenuHero from './MenuHero'
 
 const Menu = () => {
-  Hero();
+  MenuHero();
 
   const appsNames = ['Garden Medley Salad', 'Butternut Squash Soup', 'Dumplings'];
   const mainsNames = ['Vegan Bowtie Pesto', 'Not Your Moms Fried Chickn', 'Turky Burgers'];
