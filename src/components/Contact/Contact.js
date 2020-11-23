@@ -1,10 +1,14 @@
-import ChefBio from './ChefBio'
-import ContactCard from './ContactCard'
+import ChefBio from './components/ChefBio'
+import ContactSection from './components/ContactSection'
 
 const Contact = () => {
-  console.log('contact ran');
-  ChefBio();
-  ContactCard();
+
+  const mainDIV = document.querySelector('#content');
+
+  const chefBioDIV = ChefBio();
+  const contactSECTION = ContactSection();
+
+  mainDIV.append(chefBioDIV, contactSECTION);
 
 }
 

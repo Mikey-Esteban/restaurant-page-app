@@ -1,27 +1,9 @@
-import { cardData } from './helpers/contactData'
-import ContactCardFooter from './ContactCardFooter'
+import { cardData } from '../helpers/contactData'
 
 const ContactCard = () => {
 
-  const mainDIV = document.querySelector('#content');
-  const SECTION = document.createElement('DIV');
-  SECTION.classList.add('section');
-  const COLUMNS = document.createElement('DIV');
-  COLUMNS.classList.add('columns');
-  const COLUMN = document.createElement('DIV');
-  COLUMN.classList.add('column', 'is-6', 'is-offset-3');
-
-  COLUMNS.append(COLUMN);
-  SECTION.append(COLUMNS);
-  mainDIV.append(SECTION);
-
-  const CARD = document.createElement('DIV');
-  CARD.classList.add('card');
   const cardCONTENT = document.createElement('DIV');
   cardCONTENT.classList.add('card-content');
-
-  CARD.append(cardCONTENT);
-  COLUMN.append(CARD);
 
   for (let data of cardData) {
     const LEVEL = document.createElement('DIV');
@@ -59,11 +41,8 @@ const ContactCard = () => {
     cardCONTENT.append(LEVEL);
   }
 
-  // Create Card Footer
-  const FOOTER = ContactCardFooter();
-
-  cardCONTENT.append(FOOTER);
-
+  return cardCONTENT
+  
 }
 
 export default ContactCard

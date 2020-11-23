@@ -1,16 +1,14 @@
-import { createColumns, createColumn, createFigure, createInfo } from './helpers/ChefBioHelpers'
-import { chefOne, chefTwo } from './helpers/ChefBioData'
+import { createColumns, createColumn, createFigure, createInfo } from '../helpers/chefBioHelpers'
+import { chefOne, chefTwo } from '../helpers/chefBioData'
 
 const ChefBio = () => {
 
   // Set up MAIN COLUMN size 10
-  const mainDIV = document.querySelector('#content');
   const wrapperCOLUMNS = document.createElement('DIV');
   wrapperCOLUMNS.classList.add('columns');
   const wrapperCOLUMN = document.createElement('DIV');
   wrapperCOLUMN.classList.add('column', 'is-10', 'is-offset-1');
   wrapperCOLUMNS.append(wrapperCOLUMN);
-  mainDIV.append(wrapperCOLUMNS);
 
   const chefs = [chefOne, chefTwo];
 
@@ -29,6 +27,8 @@ const ChefBio = () => {
       wrapperCOLUMN.append(COLUMNS);
     }
   }
+
+  return wrapperCOLUMNS
 
 }
 
