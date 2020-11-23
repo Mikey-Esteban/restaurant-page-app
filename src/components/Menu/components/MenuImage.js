@@ -8,12 +8,8 @@ const MenuImage = () => {
   IMG.classList.add('is-rounded', 'is-food');
   IMG.id = 'food-img';
   IMG.src = '';
-  IMG.addEventListener('load', () => {
-    alert('img loaded');
-  })
   imgFIGURE.append(IMG);
   imgFigureWRAPPER.append(imgFIGURE);
-  // imgCOLUMN.append(imgFigureWRAPPER);
 
   return imgFigureWRAPPER
 

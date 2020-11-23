@@ -2,8 +2,17 @@ import { imgSRC, menuNames, menuObject } from '../helpers/menuData'
 
 const MenuAside = () => {
   const handleChangeIMG = (event) => {
+    setTimeout( () => {
+      const IMG = document.querySelector('#food-img');
+      IMG.src = imgSRC[event.target.id];
+      IMG.classList.add('transitioning-src');   // CSS property to handle smooth switching
+    }, 300);
+  }
+
+  const handleTransitionClass = (event) => {
     const IMG = document.querySelector('#food-img');
-    IMG.src = imgSRC[event.target.id];
+    IMG.src = '';
+    IMG.classList.remove('transitioning-src');
   }
 
   const createMenuLabels = (menuNames) => {
@@ -25,7 +34,8 @@ const MenuAside = () => {
       const A = document.createElement('A');
       A.innerText = item;
       A.id = item;
-      A.addEventListener('click', handleChangeIMG);
+      A.addEventListener('mouseover',handleChangeIMG);
+      A.addEventListener('mouseleave', handleTransitionClass);
       LI.append(A);
       UL.append(LI);
     }

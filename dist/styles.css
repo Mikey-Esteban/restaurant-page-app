@@ -4,6 +4,10 @@
    /* height: 200px; */
    position: relative;
 }
+
+/* ~~~~~~~~~~ */
+/* HOME component, TWITTER card */
+/* ~~~~~~~~~~ */
 .tag {
    float: left;
    position: absolute;
@@ -16,13 +20,27 @@
    font-weight: bold;
 }
 
-.img-food-column{
-  transition: all 300ms ease-in-out;
+/* ~~~~~~~~~~~~ */
+/* MENU component */
+/* ~~~~~~~~~~ */
+
+/* menuASIDE */
+.menu-list > li > a:hover {
+  color: #f19c79;
 }
-.img-food-column:hover {
-  transform: translate(100px, -100px) scale(1.2);
+/* food image */
+#food-img {
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+}
+#food-img.transitioning-src {
+  opacity: 1;
 }
 
+
+/* ~~~~~~~~~~~~ */
+/* CONTACT component */
+/* ~~~~~~~~~~ */
 .chef-bio {
   transition: all 300ms ease-in-out;
   opacity: .7;
@@ -38,8 +56,4 @@
 }
 #homeTab:hover, #contactTab:hover, #menuTab:hover {
   transform: scale(1.2);
-}
-
-.menu-list > li > a:hover {
-  color: #f19c79;
 }
