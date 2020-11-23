@@ -1,4 +1,3 @@
-console.log('i ran');
 import Home from './components/Home/Home'
 import Menu from './components/Menu/Menu'
 import Contact from './components/Contact/Contact'
