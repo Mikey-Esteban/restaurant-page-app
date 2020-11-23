@@ -13,11 +13,11 @@ export const menuObject = {
 export const imgSRC = {
     'Garden Medley Salad': 'assets/food/apps/salad.jpg',
     'Butternut Squash Soup': 'assets/food/apps/soup.jpg',
-    'Vegan Bowtie Pesto': 'assets/food/mains/pasta.jpg',
+    'Vegan Bowtie Pesto': 'assets/food/mains/pasta_1_10.jpg',
     'Not Your Moms Fried Chickn': 'assets/food/mains/chickensandwich.jpg',
     'Turky Burgers': 'assets/food/mains/turkeyburger.jpg',
-    'All Vegan Peanut Butter Cups': 'assets/food/desserts/peanutbuttercup.jpg',
-    'Fruit Donuts Galore': 'assets/food/desserts/donuts.jpg',
+    'All Vegan Peanut Butter Cups': 'assets/food/desserts/cookie_15.jpg',
+    'Fruit Donuts Galore': 'assets/food/desserts/donut_15.jpg',
     'Vegan French Toast': 'assets/food/desserts/frenchtoast.jpg'
   }
 

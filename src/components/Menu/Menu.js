@@ -16,7 +16,10 @@ const Menu = () => {
   const imgCOLUMN = SECTION.querySelector('.img-food-column');
 
   menuCOLUMN.append(menuASIDE);
-  imgCOLUMN.append(menuIMAGE);
+
+  const menuINFO = document.createElement('DIV');
+  menuINFO.textContent = ' hi hi hi hi hi hi hi';
+  imgCOLUMN.append(menuIMAGE, menuINFO);
 
   mainDIV.append(HERO, SECTION);
 
