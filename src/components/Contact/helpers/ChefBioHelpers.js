@@ -1,6 +1,6 @@
 export const createColumns = (column1, column2) => {
   const COLUMNS = document.createElement('DIV');
-  COLUMNS.classList.add('columns', 'level');
+  COLUMNS.classList.add('columns', 'level', 'chef-bio');
   COLUMNS.append(column1, column2);
   return COLUMNS
 }
