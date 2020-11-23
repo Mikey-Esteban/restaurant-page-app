@@ -1,10 +1,12 @@
-import Hero from './Hero'
-import MainImage from './MainImage'
+import Hero from './components/Hero'
+import MainImage from './components/MainImage'
 
 const Home = () => {
 
-  Hero();
-  MainImage();
+  const mainDIV = document.querySelector('#content');
+  const HERO = Hero();
+  const imageDIV = MainImage();
+  mainDIV.append(HERO, imageDIV);
 
 }
 

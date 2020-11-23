@@ -1,8 +1,6 @@
 import TwitterCard from './TwitterCard'
 
 const MainImage = () => {
-  console.log('main image ran');
-  const mainDiv = document.querySelector('#content');
 
   // Create image container block, tag to float,
   const imgCONTAINER = document.createElement('DIV');
@@ -10,7 +8,7 @@ const MainImage = () => {
   const TAG = document.createElement('DIV');
   TAG.classList.add('tag');
 
-  const { CARD } = TwitterCard();
+  const CARD = TwitterCard();
 
   // CARD done, append to TAG
   TAG.append(CARD);
@@ -25,7 +23,8 @@ const MainImage = () => {
 
   // TAG and restaurantFIGURE done, append to imgCONTAINER
   imgCONTAINER.append(TAG, restaurantFIGURE);
-  mainDiv.append(imgCONTAINER);
+
+  return imgCONTAINER;
 
 }
 

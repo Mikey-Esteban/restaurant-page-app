@@ -1,5 +1,4 @@
 const TwitterCard = () => {
-  console.log('Twitter Card ran');
 
   // Create CARD
   const CARD = document.createElement('DIV');
@@ -48,7 +47,7 @@ const TwitterCard = () => {
   // cardContentDIV done, append to CARD
   CARD.append(cardContentDIV);
 
-  return { CARD }
+  return CARD
 
 }
 
