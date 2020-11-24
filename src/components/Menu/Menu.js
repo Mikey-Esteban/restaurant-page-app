@@ -3,6 +3,9 @@ import MenuSection from './components/MenuSection'
 import MenuAside from './components/MenuAside'
 import MenuImage from './components/MenuImage'
 
+import { foodInfo } from './helpers/menuData'
+console.log(foodInfo);
+
 const Menu = () => {
 
   const mainDIV = document.querySelector('#content');
@@ -18,7 +21,15 @@ const Menu = () => {
   menuCOLUMN.append(menuASIDE);
 
   const menuINFO = document.createElement('DIV');
-  menuINFO.textContent = ' hi hi hi hi hi hi hi';
+  const H1 = document.createElement('H1');
+  H1.classList.add('title', 'has-text-link');
+  H1.textContent = foodInfo['Vegan French Toast']['description'];
+  const H2 = document.createElement('H2');
+  H2.classList.add('subtitle', 'has-text-link');
+  H2.textContent = foodInfo['Vegan French Toast']['price'];
+  menuINFO.append(H1, H2);
+
+
   imgCOLUMN.append(menuIMAGE, menuINFO);
 
   mainDIV.append(HERO, SECTION);
