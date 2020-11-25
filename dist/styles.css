@@ -21,6 +21,15 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.cta {
+  background: url('assets/avocadoCTA.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  min-height: 600px;
+}
 
 #pixel-to-watch {
   position:absolute;

@@ -1,5 +1,6 @@
 export const mainHeroData = {
   head: true,
+  cta: true,
   slowStart: true,
   class: ['is-primary', 'main-hero', 'is-info'],
   size: 'is-large',

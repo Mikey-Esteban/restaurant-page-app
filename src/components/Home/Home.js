@@ -1,5 +1,6 @@
 // import MainImage from './components/MainImage'
 import Hero from '../Hero'
+import Cta from '../Cta'
 import ChefBio from '../Contact/components/ChefBio'
 import MenuTeaser from './MenuTeaser'
 import { mainHeroData } from './data'
@@ -45,8 +46,9 @@ const Home = () => {
   const HERO = Hero(mainHeroData);
   const CHEFBIO = ChefBio();
   const menuTeaserDIV = MenuTeaser();
+  const CTA = Cta();
 
-  mainDIV.append(HERO, CHEFBIO, menuTeaserDIV);
+  mainDIV.append(HERO, CHEFBIO, menuTeaserDIV, CTA);
 
 }
 
