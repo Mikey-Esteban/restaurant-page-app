@@ -21,10 +21,18 @@ export const createFigure = (size, src) => {
   return FIGURE
 }
 
-export const createInfo = (color, text) => {
+export const createInfo = (color, title, name, bio) => {
   const NOTIFICATION = document.createElement('DIV');
   NOTIFICATION.classList.add('notification', color);
-  NOTIFICATION.innerHTML = text;
+  const H2 = document.createElement('H2');
+  H2.classList.add('subtitle', 'is-capitalized');
+  H2.textContent = title;
+  const H1 = document.createElement('H1');
+  H1.classList.add('title', 'is-uppercase', 'is-4');
+  H1.textContent = name
+  const SPAN = document.createElement('SPAN');
+  SPAN.textContent = bio;
+  NOTIFICATION.append(H2, H1, SPAN);
   return NOTIFICATION
 }
 

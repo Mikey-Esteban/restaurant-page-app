@@ -1,16 +1,25 @@
-import MenuHero from './components/MenuHero'
+import Hero from '../Hero'
 import MenuSection from './components/MenuSection'
 import MenuAside from './components/MenuAside'
 import MenuImage from './components/MenuImage'
 
 import { foodInfo } from './helpers/menuData'
-console.log(foodInfo);
 
 const Menu = () => {
 
+  const heroData = {
+    head: false,
+    class: ['is-primary'],
+    size: '',
+    titleClass: ['has-text-grey-darker'],
+    titleText: 'Always fresh & local ingredients made everyday',
+    subtitleClass: [],
+    subtitleText: `...and we're sure you've heard about our coffee`
+  }
+
   const mainDIV = document.querySelector('#content');
 
-  const HERO = MenuHero();
+  const HERO = Hero(heroData);
   const SECTION = MenuSection();
   const menuASIDE = MenuAside();
   const menuIMAGE = MenuImage();

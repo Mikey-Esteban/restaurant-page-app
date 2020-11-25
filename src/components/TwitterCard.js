@@ -2,7 +2,7 @@ const TwitterCard = () => {
 
   // Create CARD
   const CARD = document.createElement('DIV');
-  CARD.classList.add('card');
+  CARD.classList.add('card', 'twitter-card');
     // div for card content
     const cardContentDIV = document.createElement('DIV');
     cardContentDIV.classList.add('card-content');
