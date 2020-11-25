@@ -7,8 +7,19 @@
   opacity: .95;
   animation: myframes 1.5s ease-in-out, slowfade 12s ease-in-out;
 }
+.fadeaway {
+  opacity: 0;
+  animation: fadeaway 3s ease-in-out;
+}
+.fadeaway-quick {
+  opacity: 0;
+  animation: fadeaway 300ms ease-in-out;
+}
+.fadein {
+  animation: fadein 300ms ease-in-out;
+}
 .has-text-shadow {
-  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,.9);
 }
 .menu-teaser-container {
   min-height: 800px;
@@ -25,14 +36,31 @@
 
 @keyframes slowfade {
   from {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.9);
     border-radius: 10px;
-    padding: 20px 0;
+    padding: 100px 0;
   }
   to {
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 10px;
-    padding: 20px 0;
+    background-color: rgba(0,0,0,0);
+    padding: 100px 0;
   }
 
+}
+
+@keyframes fadeaway {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

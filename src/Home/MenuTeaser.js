@@ -1,11 +1,11 @@
-import Hero from '../Hero'
+import Hero from '../components/Hero'
 import FoodTeaser from './FoodTeaser'
 import { menuTeaserHeroData, drinksData, foodData } from './data'
 
 const MenuTeaser = () => {
 
   const menuTeaserDIV = document.createElement('DIV');
-  menuTeaserDIV.classList.add('box', 'menu-teaser-container');
+  menuTeaserDIV.classList.add('box', 'menu-teaser-container', 'mb-0');
   const HERO = Hero(menuTeaserHeroData);
 
   const foodSECTION = document.createElement('SECTION');

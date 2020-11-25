@@ -20,6 +20,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  min-height: 850px;
+  max-height: 850px;
 }
 .cta {
   background: url('assets/avocadoCTA.jpg') no-repeat center center fixed;
@@ -30,12 +33,14 @@
 
   min-height: 600px;
 }
-
+#breadcrumb-nav {
+  background-color: rgba(0,0,0,.1);
+}
 #pixel-to-watch {
   position:absolute;
   width: 1px;
   height: 1px;
-  top: 200px;
+  top: 798px;
   left: 0;
   background-color: #92AD40;
   z-index: 2000;

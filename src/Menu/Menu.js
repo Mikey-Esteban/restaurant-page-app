@@ -1,4 +1,4 @@
-import Hero from '../Hero'
+import Hero from '../components/Hero'
 import MenuSection from './components/MenuSection'
 import MenuAside from './components/MenuAside'
 import MenuImage from './components/MenuImage'

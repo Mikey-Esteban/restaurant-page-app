@@ -6,7 +6,8 @@ const HeroHead = () => {
   HEAD.classList.add('hero-head');
 
   const NAVBAR = document.createElement('NAV');
-  NAVBAR.classList.add('navbar');
+  NAVBAR.classList.add('navbar', 'is-fixed-top');
+  NAVBAR.id = 'hero-navbar';
 
   const navbarBRAND = document.createElement('DIV');
   navbarBRAND.classList.add('navbar-brand');
@@ -19,7 +20,7 @@ const HeroHead = () => {
   LOGO.append(logoIMG);
 
   const BURGER = document.createElement('SPAN');
-  BURGER.classList.add('navbar-burger', 'burger');
+  BURGER.classList.add('navbar-burger', 'burger', 'has-text-white');
   BURGER.dataset.target = 'navbarMenuHeroA';
   for (let i=0; i<3; i++) {
     const SPAN = document.createElement('SPAN');
