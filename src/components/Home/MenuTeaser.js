@@ -1,20 +1,16 @@
 import Hero from '../Hero'
 import FoodTeaser from './FoodTeaser'
-import { heroData, drinksData } from './data'
+import { menuTeaserHeroData, drinksData, foodData } from './data'
 
 const MenuTeaser = () => {
 
-  console.log('Menu Teaser ran');
-
   const menuTeaserDIV = document.createElement('DIV');
   menuTeaserDIV.classList.add('box', 'menu-teaser-container');
-  const HERO = Hero(heroData);
+  const HERO = Hero(menuTeaserHeroData);
 
   const foodSECTION = document.createElement('SECTION');
   const drinksDIV = FoodTeaser(drinksData);
-
-  const foodsDIV = document.createElement('DIV');
-  foodsDIV.classList.add('columns');
+  const foodsDIV = FoodTeaser(foodData);
 
   foodSECTION.append(drinksDIV, foodsDIV);
   menuTeaserDIV.append(HERO, foodSECTION);

@@ -2,8 +2,6 @@ import HeroHead from './HeroHead'
 
 const Hero = (data) => {
 
-  console.log('Main Hero ran');
-
   // Create hero section, hero body, container, h1 & h1
   const SECTION = document.createElement('SECTION');
   SECTION.classList.add('hero');
@@ -20,6 +18,7 @@ const Hero = (data) => {
 
   const CONTAINER = document.createElement('DIV');
   CONTAINER.classList.add('container', 'has-text-centered');
+  if (data['slowStart']) CONTAINER.classList.add('slow-show-start');
 
   const TITLE = document.createElement('H1');
   TITLE.classList.add('title');

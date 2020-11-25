@@ -2,10 +2,9 @@
 import Hero from '../Hero'
 import ChefBio from '../Contact/components/ChefBio'
 import MenuTeaser from './MenuTeaser'
+import { mainHeroData } from './data'
 
 const Home = () => {
-
-  console.log('Home ran');
 
   const mainDIV = document.querySelector('#content');
 
@@ -33,17 +32,17 @@ const Home = () => {
   // });
   // observer.observe(document.querySelector("#pixel-to-watch"));
 
-  const heroData = {
-    head: true,
-    class: ['is-primary', 'main-hero', 'is-info'],
-    size: 'is-large',
-    titleClass: ['has-text-info', 'has-text-weight-light', 'is-1', 'slow-show-start'],
-    titleText: 'Welcome to Veganic Corner',
-    subtitleClass: ["has-text-link", "slow-show-start"],
-    subtitleText: `come work, talk, commune.. but most importantly be hungry for delicious healthy eats.`
-  }
+  // const heroData = {
+  //   head: true,
+  //   class: ['is-primary', 'main-hero', 'is-info'],
+  //   size: 'is-large',
+  //   titleClass: ['has-text-info', 'has-text-weight-light', 'is-1', 'slow-show-start'],
+  //   titleText: 'Welcome to Veganic Corner',
+  //   subtitleClass: ["has-text-link", "slow-show-start"],
+  //   subtitleText: `come work, talk, commune.. but most importantly be hungry for delicious healthy eats.`
+  // }
 
-  const HERO = Hero(heroData);
+  const HERO = Hero(mainHeroData);
   const CHEFBIO = ChefBio();
   const menuTeaserDIV = MenuTeaser();
 
