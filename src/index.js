@@ -4,25 +4,27 @@ import Contact from './Contact/Contact'
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // handleTabChange
   const handleTabChange = (event) => {
-    console.log('clicked');
+    console.log(event.target);
     const mainDIV = document.querySelector('#content');
     mainDIV.innerHTML = '';
 
     if ( event.target.id == 'homeTAB') {
       Home();
-      findTabs();
+      const tabs = findTabs();
+      toggleActive(tabs);
       addTabListeners();
     }
     else if (event.target.id == 'menuTAB'){
       Menu();
-      findTabs();
+      const tabs = findTabs();
+      toggleActive(tabs);
       addTabListeners();
     }
     else if (event.target.id == 'contactTAB') {
       Contact();
-      findTabs();
+      const tabs = findTabs();
+      toggleActive(tabs);
       addTabListeners();
     }
   }
@@ -34,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // const homeTab = document.querySelector('#homeTab');
     // const menuTab = document.querySelector('#menuTab');
     // const contactTab = document.querySelector('#contactTab');
+    const tabs = [ homeTAB, menuTAB, contactTAB ]
+    return tabs
   }
 
   const addTabListeners = () => {
@@ -43,6 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // homeTab.addEventListener('click', handleTabChange);
     // menuTab.addEventListener('click', handleTabChange);
     // contactTab.addEventListener('click', handleTabChange);
+  }
+
+  const toggleActive = (tabs) => {
+    for (let tab of tabs) {
+      tab.id == event.target.id ? tab.classList.add('is-active') : tab.classList.remove('is-active');
+    }
   }
 
 
