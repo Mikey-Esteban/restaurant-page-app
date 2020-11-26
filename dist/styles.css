@@ -20,9 +20,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  min-height: 850px;
-  max-height: 850px;
 }
 .cta {
   background: url('assets/images/avocadoCTA.jpg') no-repeat center center fixed;

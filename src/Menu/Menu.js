@@ -3,23 +3,13 @@ import MenuSection from './MenuSection'
 import MenuAside from './MenuAside'
 import MenuImage from './MenuImage'
 
-import { foodInfo } from './helpers/menuData'
+import { foodInfo, mainHeroData } from './helpers/menuData'
 
 const Menu = () => {
 
-  const heroData = {
-    head: false,
-    class: ['is-primary'],
-    size: '',
-    titleClass: ['has-text-grey-darker'],
-    titleText: 'Always fresh & local ingredients made everyday',
-    subtitleClass: [],
-    subtitleText: `...and we're sure you've heard about our coffee`
-  }
-
   const mainDIV = document.querySelector('#content');
 
-  const HERO = Hero(heroData);
+  const HERO = Hero(mainHeroData);
   const SECTION = MenuSection();
   const menuASIDE = MenuAside();
   const menuIMAGE = MenuImage();
@@ -37,7 +27,6 @@ const Menu = () => {
   H2.classList.add('subtitle', 'has-text-link');
   H2.textContent = foodInfo['Vegan French Toast']['price'];
   menuINFO.append(H1, H2);
-
 
   imgCOLUMN.append(menuIMAGE, menuINFO);
 

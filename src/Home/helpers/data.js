@@ -4,6 +4,10 @@ export const mainHeroData = {
   slowStart: true,
   class: ['is-primary', 'main-hero', 'is-info'],
   size: 'is-large',
+  heights: {
+    min: '850px',
+    max: '850px'
+  },
   titleClass: ['has-text-info', 'has-text-weight-light', 'is-1', 'has-text-shadow'],
   titleText: 'Welcome to Veganic Corner',
   subtitleClass: ["has-text-link", 'has-text-shadow'],

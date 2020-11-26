@@ -8,6 +8,12 @@ const Hero = (data) => {
   if (data['class']) SECTION.classList.add(...data['class']);
   if (data['size']) SECTION.classList.add(data['size']);
 
+  if (data['heights']) {
+    SECTION.style.minHeight = data['heights']['min'];
+    SECTION.style.maxHeight = data['heights']['max'];    
+  }
+  console.log('past the min max height section');
+
   if (data['head']) {
     const HEAD = HeroHead();
     SECTION.append(HEAD);
