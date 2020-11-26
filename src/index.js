@@ -1,6 +1,7 @@
 import Home from './Home/Home'
 import Menu from './Menu/Menu'
 import Contact from './Contact/Contact'
+import Footer from './components/Footer'
 import { findTabs, toggleActive } from './helpers/navbarFunctions'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -62,5 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
   Home();
   findTabs();
   addTabListeners();
+
+
+  // Add Footer
+  const BODY = document.querySelector('BODY');
+  const FOOTER = Footer();
+
+  BODY.append(FOOTER);
 
 })
