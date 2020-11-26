@@ -10,7 +10,6 @@ const ContactSection = () => {
   const COLUMN = document.createElement('DIV');
   COLUMN.classList.add('column', 'is-6', 'is-offset-3');
 
-  ////fdsaf sfdsafasdf fdsaf
   const CARD = document.createElement('DIV');
   CARD.classList.add('card');
 

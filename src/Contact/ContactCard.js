@@ -1,4 +1,4 @@
-import { cardData } from '../helpers/contactData'
+import { cardData } from './helpers/data'
 
 const ContactCard = () => {
 
@@ -42,7 +42,7 @@ const ContactCard = () => {
   }
 
   return cardCONTENT
-  
+
 }
 
 export default ContactCard

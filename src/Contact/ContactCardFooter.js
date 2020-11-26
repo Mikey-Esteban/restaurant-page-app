@@ -1,4 +1,4 @@
-import { socials } from '../helpers/socialsData'
+import { socials } from './helpers/data'
 
 const ContactCardFooter = () => {
 

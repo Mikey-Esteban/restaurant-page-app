@@ -1,7 +1,7 @@
 import Hero from '../components/Hero'
-import MenuSection from './components/MenuSection'
-import MenuAside from './components/MenuAside'
-import MenuImage from './components/MenuImage'
+import MenuSection from './MenuSection'
+import MenuAside from './MenuAside'
+import MenuImage from './MenuImage'
 
 import { foodInfo } from './helpers/menuData'
 

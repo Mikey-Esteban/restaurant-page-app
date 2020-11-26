@@ -9,16 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // handleTabChange
   const handleTabChange = (event) => {
+    console.log('clicked');
     const mainDIV = document.querySelector('#content');
     mainDIV.innerHTML = '';
 
-    if (event.target.id == 'homeTab') {
+    if (event.target.id == 'homeTab' || event.target.id == 'homeTAB') {
       Home();
     }
-    else if (event.target.id == 'menuTab'){
+    else if (event.target.id == 'menuTab' || event.target.id == 'menuTAB'){
       Menu();
     }
-    else if (event.target.id == 'contactTab') {
+    else if (event.target.id == 'contactTab' || event.target.id == 'contactTAB') {
       Contact();
     }
   }
@@ -26,10 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const homeTab = document.querySelector('#homeTab');
   const menuTab = document.querySelector('#menuTab');
   const contactTab = document.querySelector('#contactTab');
+  const homeTAB = document.querySelector('#homeTAB');
+  const menuTAB = document.querySelector('#menuTAB');
+  const contactTAB = document.querySelector('#contactTAB');
 
   homeTab.addEventListener('click', handleTabChange);
   menuTab.addEventListener('click', handleTabChange);
   contactTab.addEventListener('click', handleTabChange);
+  homeTAB.addEventListener('click', handleTabChange);
+  menuTAB.addEventListener('click', handleTabChange);
+  contactTAB.addEventListener('click', handleTabChange);
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

@@ -1,4 +1,4 @@
-import { imgSRC, menuNames, menuObject } from '../helpers/menuData'
+import { imgSRC, menuNames, menuObject } from './helpers/menuData'
 
 const MenuAside = () => {
   const handleChangeIMG = (event) => {

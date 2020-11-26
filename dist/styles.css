@@ -15,7 +15,7 @@
 /* HOME component, TWITTER card */
 /* ~~~~~~~~~~ */
 .main-hero {
-  background: url('assets/openseating.jpg') no-repeat center center fixed;
+  background: url('assets/images/openseating.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,7 +25,7 @@
   max-height: 850px;
 }
 .cta {
-  background: url('assets/avocadoCTA.jpg') no-repeat center center fixed;
+  background: url('assets/images/avocadoCTA.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
