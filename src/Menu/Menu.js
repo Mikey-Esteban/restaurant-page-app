@@ -1,4 +1,5 @@
 import Hero from '../components/Hero'
+import Observer from '../components/Observer'
 import MenuSection from './MenuSection'
 import MenuAside from './MenuAside'
 import MenuImage from './MenuImage'
@@ -9,6 +10,7 @@ import { mainHeroData } from './helpers/menuData'
 const Menu = () => {
 
   const mainDIV = document.querySelector('#content');
+  Observer();
 
   const HERO = Hero(mainHeroData);
   const SECTION = MenuSection();
