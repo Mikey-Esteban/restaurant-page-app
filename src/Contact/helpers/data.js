@@ -1,3 +1,19 @@
+export const mainHeroData = {
+  head: true,
+  cta: false,
+  slowStart: false,
+  class: ['is-primary', 'main-hero', 'is-info'],
+  size: '',
+  heights: {
+    min: '250px',
+    max: '300px'
+  },
+  titleClass: ['has-text-info', 'has-text-weight-light', 'is-3', 'has-text-shadow', 'mt-5'],
+  titleText: `We'd love to here from you!`,
+  subtitleClass: ["has-text-link", 'has-text-shadow'],
+  subtitleText: `stop by or follow along any of our socials :)`
+}
+
 export const socials = [
   {
     'type': 'Twitter',
@@ -37,4 +53,4 @@ export const cardData = [
   }
 ]
 
-export default { socials, cardData }
+export default { mainHeroData, socials, cardData }

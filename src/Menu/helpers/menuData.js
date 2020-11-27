@@ -9,10 +9,10 @@ export const mainHeroData = {
   class: ['is-primary', 'main-hero', 'is-info'],
   size: '',
   heights: {
-    min: '300px',
-    max: '350px'
+    min: '250px',
+    max: '300px'
   },
-  titleClass: ['has-text-info', 'has-text-weight-light', 'is-1', 'has-text-shadow'],
+  titleClass: ['has-text-info', 'has-text-weight-light', 'is-3', 'has-text-shadow', 'mt-5'],
   titleText: 'Always fresh & local ingredients made everyday',
   subtitleClass: ["has-text-link", 'has-text-shadow'],
   subtitleText: `...and we're sure you've heard about our coffee`
