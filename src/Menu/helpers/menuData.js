@@ -32,36 +32,36 @@ export const menuNames = [ 'Light Bites', 'Empty Stomach Quenchers', 'Sweet Toot
 
 export const foodInfo = {
   'Garden Medley Salad': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': 'fresh kale, chickpeas, avocado, topped with a light lemon vinaigrette',
+    'price': '$7.99'
   },
   'Butternut Squash Soup': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': 'smooth & creamy squash smooth made with cashew cream, spinkled with pumpkin seeds',
+    'price': '$5.99'
   },
   'Vegan Gnocchi Pesto': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': 'beaufitul potato gnocchi with brocolli rabe and walnuts',
+    'price': '$12.99'
   },
   'Not Your Moms Fried Chickn': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': `toasted seasame bun, housemade slaw, 1000 island dressing with in house 'Chickn'`,
+    'price': '$11.99'
   },
   'Turky Burgers': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': 'in house cibatta bread, tomatoes, lettuce, vegan mayonaise',
+    'price': '$9.99'
   },
   'All Vegan Chocolate Chip Cookie': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': 'with a sprinkle of sea salt to add that delicious kick',
+    'price': '2 for $2.99'
   },
   'Classic Donut': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': 'all your classic flavors. Glazed, Chocolate Frosting, Powdered',
+    'price': 'half dozen ($9.99), $2 each'
   },
   'Vegan French Toast': {
-    'description': 'fdsafdsafdsafdsa',
-    'price': 7.99
+    'description': 'topped with your choice of fruit, made with in house syrup',
+    'price': '$7.99'
   },
 }
 

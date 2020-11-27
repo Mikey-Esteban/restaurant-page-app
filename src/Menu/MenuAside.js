@@ -1,4 +1,4 @@
-import { imgSRC, menuNames, menuObject } from './helpers/menuData'
+import { imgSRC, foodInfo, menuNames, menuObject } from './helpers/menuData'
 
 const MenuAside = () => {
   const handleChangeIMG = (event) => {
@@ -9,10 +9,27 @@ const MenuAside = () => {
     }, 300);
   }
 
+  const handleChangeDescription = (event) => {
+    setTimeout( () => {
+      const title = document.querySelector('#food-description');
+      title.textContent = foodInfo[event.target.id]['description'];
+      title.classList.add('transitioning-src');
+      const price = document.querySelector('#food-price');
+      price.textContent = foodInfo[event.target.id]['price'];
+      price.classList.add('transitioning-src');
+    }, 300);
+  }
+
   const handleTransitionClass = (event) => {
     const IMG = document.querySelector('#food-img');
+    const title = document.querySelector('#food-description');
+    const price = document.querySelector('#food-price');
     IMG.src = '';
+    title.textContent = '';
+    price.textContent = '';
     IMG.classList.remove('transitioning-src');
+    title.classList.remove('transitioning-src');
+    price.classList.remove('transitioning-src');
   }
 
   const createMenuLabels = (menuNames) => {
@@ -35,6 +52,7 @@ const MenuAside = () => {
       A.innerText = item;
       A.id = item;
       A.addEventListener('mouseover',handleChangeIMG);
+      A.addEventListener('mouseover', handleChangeDescription);
       A.addEventListener('mouseleave', handleTransitionClass);
       LI.append(A);
       UL.append(LI);
