@@ -1,8 +1,8 @@
-.visible-scrollbar::-webkit-scrollbar-thumb {
+/* .visible-scrollbar::-webkit-scrollbar-thumb {
     background-color: #acacac;
     border-radius: 50px;
     height: 120px;
-}
+} */
 
 #homeTab, #contactTab, #menuTab {
   transition: all 150ms ease-in-out;

@@ -1,7 +1,7 @@
 const MenuSection = () => {
 
   const SECTION = document.createElement('SECTION');
-  SECTION.classList.add('section', 'mt-6');
+  SECTION.classList.add('section');
   const COLUMNS = document.createElement('DIV');
   COLUMNS.classList.add('columns');
   const menuCOLUMN = document.createElement('DIV');
