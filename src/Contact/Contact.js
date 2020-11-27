@@ -1,6 +1,6 @@
 import Hero from '../components/Hero'
 import ContactSection from './ContactSection'
-import { mainHeroData } from './helpers/data'
+import { mainHeroData } from './helpers/contactData'
 
 const Contact = () => {
 

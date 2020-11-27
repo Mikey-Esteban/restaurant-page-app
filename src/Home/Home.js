@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import Cta from '../components/Cta'
 import ChefBio from './ChefBio'
 import MenuTeaser from './MenuTeaser'
-import { mainHeroData } from './helpers/data'
+import { mainHeroData } from './helpers/homeData'
 
 const Home = () => {
 

@@ -1,5 +1,5 @@
 import { createColumns, createColumn, createFigure, createInfo } from './helpers/chefBioHelpers'
-import { chefOne, chefTwo } from './helpers/data'
+import { chefOne, chefTwo } from './helpers/homeData'
 
 const ChefBio = () => {
 

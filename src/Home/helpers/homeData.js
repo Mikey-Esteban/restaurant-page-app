@@ -39,11 +39,11 @@ export const drinksData = {
   ],
   imgOne: {
     size: 'is-5by4',
-    src: 'assets/food/coffee.jpg'
+    src: 'assets/food/teaser/coffee.jpg'
   },
   imgTwo: {
     size: 'is-3by4',
-    src: 'assets/food/cocktail2.jpg'
+    src: 'assets/food/teaser/cocktail2.jpg'
   }
 }
 
@@ -62,11 +62,11 @@ export const foodData = {
   ],
   imgOne: {
     size: 'is-4by3',
-    src: 'assets/food/pasta.jpg'
+    src: 'assets/food/teaser/pasta.jpg'
   },
   imgTwo: {
     size: 'is-3by4',
-    src: 'assets/food/brownie.jpg'
+    src: 'assets/food/teaser/brownie.jpg'
   }
 }
 

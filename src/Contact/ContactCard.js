@@ -1,4 +1,4 @@
-import { cardData } from './helpers/data'
+import { cardData } from './helpers/contactData'
 
 const ContactCard = () => {
 

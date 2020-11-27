@@ -1,6 +1,6 @@
 import Hero from '../components/Hero'
 import FoodTeaser from './FoodTeaser'
-import { menuTeaserHeroData, drinksData, foodData } from './helpers/data'
+import { menuTeaserHeroData, drinksData, foodData } from './helpers/homeData'
 
 const MenuTeaser = () => {
 
