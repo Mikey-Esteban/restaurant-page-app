@@ -35,7 +35,7 @@ const HeroHead = () => {
   const navbarEND = document.createElement('DIV');
   navbarEND.classList.add('navbar-end');
   const homeTAB = document.createElement('A');
-  homeTAB.classList.add('navbar-item', 'is-active');
+  homeTAB.classList.add('navbar-item', 'has-text-link', 'is-active');
   homeTAB.id = 'homeTAB';
   homeTAB.textContent = 'Home';
   const menuTAB = document.createElement('A');
