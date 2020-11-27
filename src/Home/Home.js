@@ -29,9 +29,11 @@ const Home = () => {
     if (entries[0].boundingClientRect.y < 0) {
       heroNAV.classList.add('fadeaway-quick');
       heroNAV.classList.remove('fadein');
+      heroNAV.style.visibility = 'hidden';
       breadcrumbNAV.classList.remove('is-hidden');
       breadcrumbNAV.classList.add('fadein');
     } else {
+      heroNAV.style.visibility = 'visible';
       heroNAV.classList.remove('fadeaway-quick');
       heroNAV.classList.add('fadein');
       breadcrumbNAV.classList.add('is-hidden');
