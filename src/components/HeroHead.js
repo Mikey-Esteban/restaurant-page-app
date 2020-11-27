@@ -35,15 +35,15 @@ const HeroHead = () => {
   const navbarEND = document.createElement('DIV');
   navbarEND.classList.add('navbar-end');
   const homeTAB = document.createElement('A');
-  homeTAB.classList.add('navbar-item', 'has-text-link', 'is-active');
+  homeTAB.classList.add('navbar-item', 'has-text-white', 'has-text-weight-bold', 'is-active', 'mx-4');
   homeTAB.id = 'homeTAB';
   homeTAB.textContent = 'Home';
   const menuTAB = document.createElement('A');
-  menuTAB.classList.add('navbar-item', 'link-invert', 'has-text-link', 'is-outlined');
+  menuTAB.classList.add('navbar-item', 'link-invert', 'has-text-white', 'has-text-weight-bold', 'is-outlined', 'mx-4');
   menuTAB.textContent = 'Menu';
   menuTAB.id= 'menuTAB';
   const contactTAB = document.createElement('A');
-  contactTAB.classList.add('navbar-item', 'has-text-link', 'is-outlined');
+  contactTAB.classList.add('navbar-item', 'has-text-white', 'has-text-weight-bold', 'is-outlined', 'mx-4');
   contactTAB.id = 'contactTAB';
   contactTAB.textContent = 'Contact';
   // TABS done, append to navbarEND
