@@ -1,7 +1,7 @@
 import Home from './Home/Home'
 import Menu from './Menu/Menu'
 import Contact from './Contact/Contact'
-import Hero from './components/Hero'
+import newHero from './components/newHero'
 import Footer from './components/Footer'
 import { findTabs, toggleActive } from './helpers/navbarFunctions'
 
@@ -15,21 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if ( event.target.id == 'homeTAB' || event.target.id == 'homeTab' ) {
       Home();
-      const tabs = findTabs();
-      toggleActive(tabs);
-      addTabListeners();
+      // const tabs = findTabs();
+      // toggleActive(tabs);
+      // addTabListeners();
     }
     else if (event.target.id == 'menuTAB' || event.target.id == 'menuTab' ){
       Menu();
-      const tabs = findTabs();
-      toggleActive(tabs);
-      addTabListeners();
+      // const tabs = findTabs();
+      // toggleActive(tabs);
+      // addTabListeners();
     }
     else if (event.target.id == 'contactTAB' || event.target.id == 'contactTab' ) {
       Contact();
-      const tabs = findTabs();
-      toggleActive(tabs);
-      addTabListeners();
+      // const tabs = findTabs();
+      // toggleActive(tabs);
+      // addTabListeners();
     }
   }
 
@@ -63,14 +63,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Add Footer
   const BODY = document.querySelector('BODY');
-  const HERO = Hero({});
-  const FOOTER = Footer();
 
-  BODY.append(HERO, FOOTER);
+  const data = {
+    'head': true,
+    'heights': {
+      'min': '850px',
+      'max': '850px'
+    }
+  }
+  const newHERO = newHero(data);
+  const FOOTER = Footer();
+  const mainDIV = document.querySelector('#content');
+  BODY.insertBefore(newHERO, mainDIV);
+  BODY.append(FOOTER)
 
   // Home Page as default
   Home();
-  findTabs();
+  const tabs = findTabs();
+  toggleActive(tabs);
   addTabListeners();
 
 
