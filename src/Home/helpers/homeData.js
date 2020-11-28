@@ -1,10 +1,8 @@
-export const mainHeroData = {
-  head: true,
+export const mainHeroData1 = {
   cta: true,
+  first: false,
   cta2: true,
-  slowStart: true,
-  class: ['is-primary', 'main-hero', 'is-info'],
-  size: 'is-large',
+  slowStart: () => { slowStart() },
   heights: {
     min: '850px',
     max: '850px'
@@ -15,10 +13,16 @@ export const mainHeroData = {
   subtitleText: `come work, talk, commune.. but most importantly be hungry for delicious healthy eats.`
 }
 
+export const mainHeroData2 = {
+    cta2: true,
+    first: true,
+    heights: {
+      min: '800px',
+      max: '850px'
+    }
+}
+
 export const menuTeaserHeroData = {
-  head: false,
-  class: ['has-text-centered'],
-  size: '',
   titleClass: ['has-text-link', 'is-4'],
   titleText: 'A Brilliant Menu',
   subtitleClass: ['has-text-link', 'is-6'],
@@ -94,4 +98,27 @@ export const chefTwo = {
     reverse: true
   }
 
-export default { mainHeroData, menuTeaserHeroData, drinksData, foodData,chefOne, chefTwo }
+const slowStart = () => {
+
+    const DIV = document.querySelector('.slow-show-start');
+    const H1 = DIV.querySelector('H1');
+    const H2 = DIV.querySelector('H2');
+
+    setTimeout( () => {
+      DIV.classList.add('slow-show-end');
+    }, 1000);
+
+    setTimeout( () => {
+      H1.classList.add('fadeaway');
+      H2.classList.add('fadeaway');
+    }, 10000);
+
+    setTimeout( () => {
+      DIV.classList.remove('slow-show-start', 'slow-show-end');
+      H1.classList.remove('fadeaway');
+      H2.classList.remove('fadeaway');
+    }, 10001);
+
+  }
+
+export default { mainHeroData1, mainHeroData2, menuTeaserHeroData, drinksData, foodData,chefOne, chefTwo }

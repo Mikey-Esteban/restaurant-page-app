@@ -1,4 +1,4 @@
-// import Hero from '../components/Hero'
+import EditHero from '../components/EditHero'
 import Observer from '../components/Observer'
 import MenuSection from './MenuSection'
 import MenuAside from './MenuAside'
@@ -9,23 +9,20 @@ import { mainHeroData } from './helpers/menuData'
 
 const Menu = () => {
 
-  const mainDIV = document.querySelector('#content');
+  const mainDiv = document.querySelector('#content');
   Observer();
-
-  // const HERO = Hero(mainHeroData);
+  EditHero(mainHeroData);
   const SECTION = MenuSection();
   const menuASIDE = MenuAside();
   const menuIMAGE = MenuImage();
   const menuINFO = MenuDescription();
 
-  const menuCOLUMN = SECTION.querySelector('.menu-food-column');
-  const imgCOLUMN = SECTION.querySelector('.img-food-column');
+  const menuColumn = SECTION.querySelector('.menu-food-column');
+  const imgColumn = SECTION.querySelector('.img-food-column');
 
-  menuCOLUMN.append(menuASIDE);
-
-  imgCOLUMN.append(menuIMAGE, menuINFO);
-
-  mainDIV.append(SECTION);
+  menuColumn.append(menuASIDE);
+  imgColumn.append(menuIMAGE, menuINFO);
+  mainDiv.append(SECTION);
 
 }
 

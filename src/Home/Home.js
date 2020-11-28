@@ -1,16 +1,19 @@
-// import Hero from '../components/Hero'
-import Cta from '../components/Cta'
+import EditHero from '../components/EditHero'
 import Observer from '../components/Observer'
+import Cta from '../components/Cta'
 import ChefBio from './ChefBio'
 import MenuTeaser from './MenuTeaser'
-import { mainHeroData } from './helpers/homeData'
+import { mainHeroData1, mainHeroData2 } from './helpers/homeData'
 
-const Home = () => {
+const Home = (initialLoad) => {
 
-  console.log('in Home');
   const mainDIV = document.querySelector('#content');
   Observer();
-  // const HERO = Hero(mainHeroData);
+  if (initialLoad) {
+    EditHero(mainHeroData1);
+  } else {
+    EditHero(mainHeroData2);
+  }
   const CHEFBIO = ChefBio();
   const menuTeaserDIV = MenuTeaser();
   const CTA = Cta();

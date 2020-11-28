@@ -2,11 +2,13 @@ import Home from './Home/Home'
 import Menu from './Menu/Menu'
 import Contact from './Contact/Contact'
 import newHero from './components/newHero'
+import Observer from './components/Observer'
 import Footer from './components/Footer'
 import { findTabs, toggleActive } from './helpers/navbarFunctions'
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  let initialLoad = true;
 
   const handleTabChange = (event) => {
 
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mainDIV.innerHTML = '';
 
     if ( event.target.id == 'homeTAB' || event.target.id == 'homeTab' ) {
-      Home();
+      Home(initialLoad);
       // const tabs = findTabs();
       // toggleActive(tabs);
       // addTabListeners();
@@ -64,24 +66,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add Footer
   const BODY = document.querySelector('BODY');
 
-  const data = {
-    'head': true,
-    'heights': {
-      'min': '850px',
-      'max': '850px'
-    }
-  }
-  const newHERO = newHero(data);
+  const newHERO = newHero();
   const FOOTER = Footer();
   const mainDIV = document.querySelector('#content');
   BODY.insertBefore(newHERO, mainDIV);
   BODY.append(FOOTER)
 
   // Home Page as default
-  Home();
+  Home(initialLoad);
+  Observer();
   const tabs = findTabs();
   toggleActive(tabs);
   addTabListeners();
 
 
+  initialLoad = false;
 })

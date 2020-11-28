@@ -1,12 +1,7 @@
 export const mainHeroData = {
-  head: true,
-  cta: false,
-  slowStart: false,
-  class: ['is-primary', 'main-hero', 'is-info'],
-  size: '',
   heights: {
-    min: '250px',
-    max: '300px'
+    min: '300px',
+    max: '350px'
   },
   titleClass: ['has-text-info', 'has-text-weight-light', 'is-3', 'has-text-shadow', 'mt-5'],
   titleText: `We'd love to here from you!`,

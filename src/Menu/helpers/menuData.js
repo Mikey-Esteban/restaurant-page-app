@@ -3,28 +3,13 @@ const mainsNames = ['Vegan Gnocchi Pesto', 'Not Your Moms Fried Chickn', 'Turky 
 const dessertsNames = ['All Vegan Chocolate Chip Cookie', 'Classic Donut', 'Vegan French Toast'];
 
 export const mainHeroData = {
-  head: true,
-  cta: false,
-  slowStart: false,
-  class: ['is-primary', 'main-hero', 'is-info'],
-  size: '',
   heights: {
-    min: '250px',
-    max: '300px'
+    min: '300px',
+    max: '350px'
   },
   titleClass: ['has-text-info', 'has-text-weight-light', 'is-3', 'has-text-shadow', 'mt-5'],
   titleText: 'Always fresh & local ingredients made everyday',
   subtitleClass: ["has-text-link", 'has-text-shadow'],
-  subtitleText: `...and we're sure you've heard about our coffee`
-}
-
-const heroData = {
-  head: false,
-  class: ['is-primary'],
-  size: '',
-  titleClass: ['has-text-grey-darker'],
-  titleText: 'Always fresh & local ingredients made everyday',
-  subtitleClass: [],
   subtitleText: `...and we're sure you've heard about our coffee`
 }
 
@@ -82,4 +67,4 @@ export const imgSRC = {
     'Vegan French Toast': 'assets/food/desserts/frenchtoast.jpg'
   }
 
-export default { mainHeroData, heroData, menuNames, menuObject, foodInfo, imgSRC }
+export default { mainHeroData, menuNames, menuObject, foodInfo, imgSRC }
