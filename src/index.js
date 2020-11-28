@@ -1,11 +1,12 @@
 import Home from './Home/Home'
 import Menu from './Menu/Menu'
 import Contact from './Contact/Contact'
+import Hero from './components/Hero'
 import Footer from './components/Footer'
 import { findTabs, toggleActive } from './helpers/navbarFunctions'
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
 
   const handleTabChange = (event) => {
 
@@ -60,16 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Add Footer
+  const BODY = document.querySelector('BODY');
+  const HERO = Hero({});
+  const FOOTER = Footer();
+
+  BODY.append(HERO, FOOTER);
+
   // Home Page as default
   Home();
   findTabs();
   addTabListeners();
 
-
-  // Add Footer
-  const BODY = document.querySelector('BODY');
-  const FOOTER = Footer();
-
-  BODY.append(FOOTER);
 
 })

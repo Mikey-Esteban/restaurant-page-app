@@ -1,4 +1,5 @@
 import HeroHead from './HeroHead'
+import Cta2 from './Cta2'
 
 const Hero = (data) => {
 
@@ -10,7 +11,7 @@ const Hero = (data) => {
 
   if (data['heights']) {
     SECTION.style.minHeight = data['heights']['min'];
-    SECTION.style.maxHeight = data['heights']['max'];    
+    SECTION.style.maxHeight = data['heights']['max'];
   }
   console.log('past the min max height section');
 
@@ -35,6 +36,13 @@ const Hero = (data) => {
   SUBTITLE.classList.add('subtitle');
   if (data['subtitleClass']) SUBTITLE.classList.add(...data['subtitleClass']);
   SUBTITLE.innerText = data['subtitleText'];
+
+  if (data['cta2']) {
+    setTimeout( () => {
+      const ctaDIV = Cta2();
+      BODY.append(ctaDIV);
+    }, 13500)
+  }
 
   CONTAINER.append(TITLE, SUBTITLE);
   BODY.append(CONTAINER);
