@@ -1,6 +1,6 @@
 import HeroHead from './HeroHead'
 
-const newHero = () => {
+const MainHero = () => {
 
   const SECTION = document.createElement('SECTION');
   SECTION.classList.add('hero', 'is-primary', 'main-hero', 'is-info', 'is-fullheight');
@@ -17,4 +17,4 @@ const newHero = () => {
 
 }
 
-export default newHero
+export default MainHero

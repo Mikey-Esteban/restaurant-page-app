@@ -1,5 +1,5 @@
 import HeroHead from './HeroHead'
-import Cta2 from './Cta2'
+// import Cta2 from './Cta2'
 
 const Hero = (data) => {
 

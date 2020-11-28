@@ -1,4 +1,4 @@
-const Cta2 = () => {
+const SloganCta = () => {
 
   const DIV = document.createElement('DIV');
   DIV.classList.add('column', 'is-6', 'is-offset-3');
@@ -19,4 +19,4 @@ const Cta2 = () => {
 
 }
 
-export default Cta2
+export default SloganCta

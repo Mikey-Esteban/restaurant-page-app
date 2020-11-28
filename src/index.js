@@ -1,7 +1,7 @@
 import Home from './Home/Home'
 import Menu from './Menu/Menu'
 import Contact from './Contact/Contact'
-import newHero from './components/newHero'
+import MainHero from './components/MainHero'
 import Observer from './components/Observer'
 import Footer from './components/Footer'
 import { findTabs, toggleActive } from './helpers/navbarFunctions'
@@ -66,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add Footer
   const BODY = document.querySelector('BODY');
 
-  const newHERO = newHero();
+  const MainHERO = MainHero();
   const FOOTER = Footer();
   const mainDIV = document.querySelector('#content');
-  BODY.insertBefore(newHERO, mainDIV);
+  BODY.insertBefore(MainHERO, mainDIV);
   BODY.append(FOOTER)
 
   // Home Page as default

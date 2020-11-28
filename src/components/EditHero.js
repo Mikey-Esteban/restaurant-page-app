@@ -1,4 +1,4 @@
-import Cta2 from './Cta2'
+import SloganCta from './SloganCta'
 
 const EditHero = (data) => {
 
@@ -34,12 +34,12 @@ const EditHero = (data) => {
 
   if (data['cta2']) {
     if (data['first']) {
-      const ctaDIV = Cta2();
+      const ctaDIV = SloganCta();
       heroBody.append(ctaDIV);
     }
     else {
       setTimeout( () => {
-        const ctaDIV = Cta2();
+        const ctaDIV = SloganCta();
         heroBody.append(ctaDIV);
       }, 13500);
       CONTAINER.className = '';

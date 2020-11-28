@@ -1,6 +1,6 @@
 import EditHero from '../components/EditHero'
 import Observer from '../components/Observer'
-import Cta from '../components/Cta'
+import ReserveCta from '../components/ReserveCta'
 import ChefBio from './ChefBio'
 import MenuTeaser from './MenuTeaser'
 import { mainHeroData1, mainHeroData2 } from './helpers/homeData'
@@ -16,9 +16,9 @@ const Home = (initialLoad) => {
   }
   const CHEFBIO = ChefBio();
   const menuTeaserDIV = MenuTeaser();
-  const CTA = Cta();
+  const ReserveCTA = ReserveCta();
 
-  mainDIV.append(CHEFBIO, menuTeaserDIV, CTA);
+  mainDIV.append(CHEFBIO, menuTeaserDIV, ReserveCTA);
 
 }
 

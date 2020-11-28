@@ -1,4 +1,4 @@
-const Cta = () => {
+const ReserveCta = () => {
 
   const DIV = document.createElement('DIV');
   DIV.classList.add('box', 'cta', 'level');
@@ -35,4 +35,4 @@ const Cta = () => {
 
 }
 
-export default Cta
+export default ReserveCta
