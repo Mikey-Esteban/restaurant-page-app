@@ -32,15 +32,21 @@ const EditHero = (data) => {
     CONTAINER.append(SUBTITLE);
   }
 
-  if (data['cta2']) {
+  if (data['sloganCta']) {
     if (data['first']) {
-      const ctaDIV = SloganCta();
+      const ctaDIV = SloganCta(data['sloganData']);
       heroBody.append(ctaDIV);
     }
     else {
       setTimeout( () => {
-        const ctaDIV = SloganCta();
-        heroBody.append(ctaDIV);
+        const heroBody = document.querySelector('.hero-body');
+        const div = heroBody.querySelector('.container');
+        const h1 = div.querySelector('H1');
+        // check to see if page has changed since
+        if (h1.textContent == 'Welcome to Veganic Corner') {
+          const ctaDIV = SloganCta(data['sloganData']);
+          heroBody.append(ctaDIV);
+        }
       }, 13500);
       CONTAINER.className = '';
       CONTAINER.classList.add('container', 'has-text-centered', 'slow-show-start');

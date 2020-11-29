@@ -19,6 +19,10 @@
   background-color: #92AD40;
   z-index: 2000;
 }
+#homeTAB.is-active, #menuTAB.is-active, #contactTAB.is-active,
+#homeTAB:hover, #menuTAB:hover, #contactTAB:hover {
+  background-color: #f19c79;
+}
 
 /* ~~~~~~~~~~ */
 /* HOME component, TWITTER card */
@@ -85,7 +89,6 @@
   animation: myframes 1.5s ease-in-out, slowfade 12s ease-in-out;
 }
 .slide-left {
-  /* transform: translateX(1000px); */
   animation: slide-left 1s ease-in-out;
 }
 .slide-right {

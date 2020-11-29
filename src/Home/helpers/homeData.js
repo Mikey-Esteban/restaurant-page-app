@@ -1,7 +1,12 @@
 export const mainHeroData1 = {
   cta: true,
   first: false,
-  cta2: true,
+  sloganCta: true,
+  sloganData: {
+    titleClass: ['subtitle', 'is-size-3','has-text-white', 'is-uppercase', 'slide-left'],
+    bookBtnClass: ['button', 'is-info', 'is-outlined', 'is-capitalize', 'is-large', 'mr-4', 'slide-right'],
+    takeoutBtnClass: ['button', 'is-link', 'is-outlined', 'is-capitalize', 'has-text-white','is-large', 'slide-right']
+  },
   slowStart: () => { slowStart() },
   heights: {
     min: '850px',
@@ -14,7 +19,12 @@ export const mainHeroData1 = {
 }
 
 export const mainHeroData2 = {
-    cta2: true,
+    sloganCta: true,
+    sloganData: {
+      titleClass: ['subtitle', 'is-size-3','has-text-white', 'is-uppercase', 'fadein'],
+      bookBtnClass: ['button', 'is-info', 'is-outlined', 'is-capitalize', 'is-large', 'mr-4', 'fadein'],
+      takeoutBtnClass: ['button', 'is-link', 'is-outlined', 'is-capitalize', 'has-text-white','is-large', 'fadein']
+    },
     first: true,
     heights: {
       min: '800px',
@@ -112,12 +122,6 @@ const slowStart = () => {
       H1.classList.add('fadeaway');
       H2.classList.add('fadeaway');
     }, 10000);
-
-    setTimeout( () => {
-      DIV.classList.remove('slow-show-start', 'slow-show-end');
-      H1.classList.remove('fadeaway');
-      H2.classList.remove('fadeaway');
-    }, 10001);
 
   }
 

@@ -3,9 +3,9 @@ export const mainHeroData = {
     min: '300px',
     max: '350px'
   },
-  titleClass: ['has-text-info', 'has-text-weight-light', 'is-3', 'has-text-shadow', 'mt-5'],
+  titleClass: ['has-text-info', 'has-text-weight-light', 'is-3', 'has-text-shadow', 'fadein', 'mt-5'],
   titleText: `We'd love to here from you!`,
-  subtitleClass: ["has-text-link", 'has-text-shadow'],
+  subtitleClass: ["has-text-link", 'has-text-shadow', 'fadein'],
   subtitleText: `stop by or follow along any of our socials :)`
 }
 
