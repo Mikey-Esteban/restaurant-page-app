@@ -1,6 +1,7 @@
 import Home from './Home/Home'
 import Menu from './Menu/Menu'
 import Contact from './Contact/Contact'
+import Breadcrumb from './components/Breadcrumb'
 import MainHero from './components/MainHero'
 import Observer from './components/Observer'
 import Footer from './components/Footer'
@@ -33,10 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const BODY = document.querySelector('BODY');
+  const BREADCRUMB = Breadcrumb();
   const MainHERO = MainHero();
   const FOOTER = Footer();
   const mainDIV = document.querySelector('#content');
   BODY.insertBefore(MainHERO, mainDIV);
+  BODY.insertBefore(BREADCRUMB, MainHERO);
   BODY.append(FOOTER)
 
   // Home Page as default
