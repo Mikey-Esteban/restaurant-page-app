@@ -4,7 +4,7 @@ import Contact from './Contact/Contact'
 import MainHero from './components/MainHero'
 import Observer from './components/Observer'
 import Footer from './components/Footer'
-import { findTabs, toggleActive } from './helpers/navbarFunctions'
+import { findTabs, toggleActive, activateBurgerDropdown } from './helpers/navbarFunctions'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -45,24 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-      });
-    });
-  }
-
   // Add Footer
   const BODY = document.querySelector('BODY');
 
@@ -78,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabs = findTabs();
   toggleActive(tabs);
   addTabListeners();
+  activateBurgerDropdown();
 
 
   initialLoad = false;
