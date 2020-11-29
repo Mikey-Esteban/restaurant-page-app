@@ -10,9 +10,19 @@ const findTabs = () => {
 }
 
 const toggleActive = (tabs) => {
+  console.log('toggleActive ran');
   for (let tab of tabs) {
     tab.id == event.target.id ? tab.classList.add('is-active') : tab.classList.remove('is-active');
   }
+}
+
+const addTabListeners = (func) => {
+  homeTAB.addEventListener('click', func);
+  menuTAB.addEventListener('click', func);
+  contactTAB.addEventListener('click', func);
+  homeTab.addEventListener('click', func);
+  menuTab.addEventListener('click', func);
+  contactTab.addEventListener('click', func);
 }
 
 const activateBurgerDropdown = () => {
@@ -36,4 +46,4 @@ const activateBurgerDropdown = () => {
 }
 
 
-export { findTabs, toggleActive, activateBurgerDropdown }
+export { findTabs, toggleActive, activateBurgerDropdown, addTabListeners }

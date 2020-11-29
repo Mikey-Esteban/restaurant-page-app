@@ -4,7 +4,7 @@ import Contact from './Contact/Contact'
 import MainHero from './components/MainHero'
 import Observer from './components/Observer'
 import Footer from './components/Footer'
-import { findTabs, toggleActive, activateBurgerDropdown } from './helpers/navbarFunctions'
+import { findTabs, toggleActive, activateBurgerDropdown, addTabListeners } from './helpers/navbarFunctions'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -17,37 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if ( event.target.id == 'homeTAB' || event.target.id == 'homeTab' ) {
       Home(initialLoad);
-      // const tabs = findTabs();
-      // toggleActive(tabs);
-      // addTabListeners();
+      const tabs = findTabs();
+      toggleActive(tabs);
     }
     else if (event.target.id == 'menuTAB' || event.target.id == 'menuTab' ){
       Menu();
-      // const tabs = findTabs();
-      // toggleActive(tabs);
-      // addTabListeners();
+      const tabs = findTabs();
+      toggleActive(tabs);
     }
     else if (event.target.id == 'contactTAB' || event.target.id == 'contactTab' ) {
       Contact();
-      // const tabs = findTabs();
-      // toggleActive(tabs);
-      // addTabListeners();
+      const tabs = findTabs();
+      toggleActive(tabs);
     }
   }
 
-  const addTabListeners = () => {
-    homeTAB.addEventListener('click', handleTabChange);
-    menuTAB.addEventListener('click', handleTabChange);
-    contactTAB.addEventListener('click', handleTabChange);
-    homeTab.addEventListener('click', handleTabChange);
-    menuTab.addEventListener('click', handleTabChange);
-    contactTab.addEventListener('click', handleTabChange);
-  }
-
-
-  // Add Footer
   const BODY = document.querySelector('BODY');
-
   const MainHERO = MainHero();
   const FOOTER = Footer();
   const mainDIV = document.querySelector('#content');
@@ -57,11 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Home Page as default
   Home(initialLoad);
   Observer();
-  const tabs = findTabs();
-  toggleActive(tabs);
-  addTabListeners();
+  addTabListeners(handleTabChange);
   activateBurgerDropdown();
-
 
   initialLoad = false;
 })
