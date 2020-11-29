@@ -1,7 +1,5 @@
 const HeroHead = () => {
 
-  console.log('Hero Head ran');
-
   const HEAD = document.createElement('DIV');
   HEAD.classList.add('hero-head');
 

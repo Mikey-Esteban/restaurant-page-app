@@ -17,8 +17,7 @@ const EditHero = (data) => {
   if (data['titleClass']) {
     const TITLE = document.createElement('H1');
     TITLE.className = '';
-    TITLE.classList.add('title');
-    TITLE.classList.add(...data['titleClass']);
+    TITLE.classList.add('title', ...data['titleClass']);
     TITLE.innerText = data['titleText'];
     CONTAINER.append(TITLE);
   }
@@ -26,16 +25,15 @@ const EditHero = (data) => {
   if (data['subtitleClass']) {
     const SUBTITLE = document.createElement('H2');
     SUBTITLE.className = '';
-    SUBTITLE.classList.add('subtitle');
-    SUBTITLE.classList.add(...data['subtitleClass']);
+    SUBTITLE.classList.add('subtitle', ...data['subtitleClass']);
     SUBTITLE.innerText = data['subtitleText'];
     CONTAINER.append(SUBTITLE);
   }
 
   if (data['sloganCta']) {
     if (data['first']) {
-      const ctaDIV = SloganCta(data['sloganData']);
-      heroBody.append(ctaDIV);
+      const CTADIV = SloganCta(data['sloganData']);
+      heroBody.append(CTADIV);
     }
     else {
       setTimeout( () => {
@@ -44,8 +42,8 @@ const EditHero = (data) => {
         const h1 = div.querySelector('H1');
         // check to see if page has changed since
         if (h1.textContent == 'Welcome to Veganic Corner') {
-          const ctaDIV = SloganCta(data['sloganData']);
-          heroBody.append(ctaDIV);
+          const CTADIV = SloganCta(data['sloganData']);
+          heroBody.append(CTADIV);
         }
       }, 13500);
       CONTAINER.className = '';

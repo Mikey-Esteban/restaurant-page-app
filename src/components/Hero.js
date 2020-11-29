@@ -1,5 +1,4 @@
 import HeroHead from './HeroHead'
-// import Cta2 from './Cta2'
 
 const Hero = (data) => {
 
@@ -13,7 +12,6 @@ const Hero = (data) => {
     SECTION.style.minHeight = data['heights']['min'];
     SECTION.style.maxHeight = data['heights']['max'];
   }
-  console.log('past the min max height section');
 
   if (data['head']) {
     const HEAD = HeroHead();

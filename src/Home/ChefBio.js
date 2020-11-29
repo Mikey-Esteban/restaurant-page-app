@@ -3,7 +3,6 @@ import { chefOne, chefTwo } from './helpers/homeData'
 
 const ChefBio = () => {
 
-  // Set up MAIN COLUMN size 10
   const wrapperCOLUMNS = document.createElement('DIV');
   wrapperCOLUMNS.classList.add('columns', 'mt-6');
   const wrapperCOLUMN = document.createElement('DIV');
